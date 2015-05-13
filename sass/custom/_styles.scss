@@ -387,6 +387,9 @@ body {
       @extend .sans-serif-font;
       color: $secondary-text-color;
     }
+    .header-icon{
+        height: 62.000px * .9;
+    }
   }
   
   // ----- blog content -----
@@ -770,6 +773,9 @@ article {
     h2 {
       font-size: 15.349px * .9;
       font-size: 0.905rem * .9; /* 0.732 + 0.173 */
+    }      
+    .header-icon{
+        height: 38.319px * .9;
     }
   }
   
