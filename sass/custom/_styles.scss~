@@ -26,15 +26,14 @@ to learn about modular scales.
 // variables
 // ------------------------------
 
-$accent-color: #71111e;
+$accent-color: #65a672;
 $accent-hover-color: darken($accent-color, 8%);
 
 $text-color: #333;
 $secondary-text-color: #aaa;
-$code-text-color: #431a00;
 
 $line-color: #e6e6e6;
-$hide-line-numbers: false;
+$hide-line-numbers: true;
 
 $border-radius-size: 4px;
 $border-style: 2px solid $secondary-text-color;
@@ -45,53 +44,53 @@ $border-style: 2px solid $secondary-text-color;
 // ------------------------------
 
 .default-line-height {
-  line-height: 32.360px * .9;
-  line-height: 1.618rem * .9;
+  line-height: 32.360px;
+  line-height: 1.618rem;
 }
 
 .font-size-smallest {
-  font-size: 14.637px * .9;
-  font-size: 0.732rem * .9;
+  font-size: 14.637px;
+  font-size: 0.732rem;
 }
 
 .font-size-small {
-  font-size: 16.773px * .9;
-  font-size: 0.839rem * .9; /* 0.732 + 0.107 */
+  font-size: 16.773px;
+  font-size: 0.839rem; /* 0.732 + 0.107 */
 }
 
 .font-size-medium {
-  font-size: 19.359px * .9;
-  font-size: 0.968rem * .9; /* 0.732 + 0.236 */
+  font-size: 19.359px;
+  font-size: 0.968rem; /* 0.732 + 0.236 */
 }
 
 .font-size-large {
-  font-size: 32.36px * .9;
-  font-size: 1.618rem * .9;
+  font-size: 32.36px;
+  font-size: 1.618rem;
 }
 
 .font-size-largest {
-  font-size: 38.319px * .9;
-  font-size: 1.916rem * .9;
+  font-size: 38.319px;
+  font-size: 1.916rem;
 }
 
 .margin-bottom-large {
-  margin-bottom: 32.360px * .9;
-  margin-bottom: 1.618rem * .9;
+  margin-bottom: 32.360px;
+  margin-bottom: 1.618rem; 
 }
 
 .margin-bottom-larger {
-  margin-bottom: 52.358px * .9;
-  margin-bottom: 2.618rem * .9;
+  margin-bottom: 52.358px;
+  margin-bottom: 2.618rem;
 }
 
 .margin-bottom-largest {
-  margin-bottom: 62.000px * .9;
-  margin-bottom: 4.236rem * .9;
+  margin-bottom: 62.000px;
+  margin-bottom: 4.236rem;
 }
 
 .block-padding {
-  padding: 1px 32.360px * .9;
-  padding: 1px 1.618rem * .9;
+  padding: 1px 32.360px;
+  padding: 1px 1.618rem;
 }
 
 .border-style {
@@ -141,7 +140,7 @@ $border-style: 2px solid $secondary-text-color;
 html {
   @extend .default-font;
   border-top: 8px solid $accent-color;
-  font-size: 125% * .9;
+  font-size: 125%;
   line-height: 1;
 }
 
@@ -150,7 +149,7 @@ body {
   background-color: #fff;
   color: $text-color;
   text-align: center;
-  width: 62%;
+  width: 54%;
   margin: 0 auto;
 }
 
@@ -264,8 +263,8 @@ figure.code {
   
   figcaption {
     margin: 4px 0 10px;
-    line-height: 23.683px * .9;
-    line-height: 1.184rem * .9;
+    line-height: 23.683px;
+    line-height: 1.184rem;
     text-align: right;
     
     a {
@@ -295,7 +294,6 @@ pre {
   @extend .margin-bottom-large;
   text-align: left;
   line-height: 18px;
-  color: $code-text-color;
   
   &.line-numbers {
     @if $hide-line-numbers == true {
@@ -314,8 +312,8 @@ nav {
   overflow: auto;
   padding: 14.637px 0;
   padding: 0.732rem 0;
-  margin-bottom: 52.358px * .9;
-  margin-bottom: 2.618rem * .9;
+  margin-bottom: 100.316px;
+  margin-bottom: 5.016rem;
   
   // ----- search form -----
   
@@ -337,10 +335,10 @@ nav {
   
   ul {
     float: left;
-    margin-top: 9.03333px * .9; /* not from scale */
-    margin-top: 0.45rem * .9; /* rounded */
-    line-height: 32.36 * .9;
-    line-height: 1.618rem * .9;
+    margin-top: 9.03333px; /* not from scale */
+    margin-top: 0.45rem; /* rounded */
+    line-height: 32.36px;
+    line-height: 1.618rem;
     
     li {
       @extend .font-size-medium;
@@ -350,8 +348,8 @@ nav {
     }
     
     li + li {
-      padding-left: 23.683px * .9;
-      padding-left: 1.184rem * .9;
+      padding-left: 23.683px;
+      padding-left: 1.184rem;
     }
   }
 }
@@ -366,16 +364,16 @@ body {
   // ----- blog header -----
   
   > header {
-    margin: 52.358px 0;
-    margin: 2.618rem 0;
+    margin: 84.715px 0 52.358px 0;
+    margin: 4.236rem 0 2.618rem 0;
     
     h1 {
-      font-size: 62.000px * .9;
-      font-size: 3.1rem * .9;
+      font-size: 62.000px;
+      font-size: 3.1rem;
       font-weight: bold;
       text-transform: uppercase;
-      margin-bottom: 7.640px * .9;
-      margin-bottom: 0.382rem * .9;
+      margin-bottom: 7.640px;
+      margin-bottom: 0.382rem;
       
       a, a:hover {
         color: $text-color;
@@ -383,7 +381,7 @@ body {
     }
     
     h2 {
-      @extend .font-size-medium;
+      @extend .font-size-large;
       @extend .sans-serif-font;
       color: $secondary-text-color;
     }
@@ -392,8 +390,8 @@ body {
   // ----- blog content -----
   
   .blog-index > article {
-    margin-bottom: 137.069px * .9;
-    margin-bottom: 6.853rem * .9; /* for home page post preview */
+    margin-bottom: 137.069px;
+    margin-bottom: 6.853rem; /* for home page post preview */
   }
   
   section h1 {
@@ -406,8 +404,8 @@ body {
     @extend .sans-serif-font;
     padding: 23.683px 0;
     padding: 1.184rem 0;
-    margin-bottom: 62px * .9;
-    margin-bottom: 3.1rem * .9;
+    margin-bottom: 62px;
+    margin-bottom: 3.1rem;
     margin-top: -84.715px;
     margin-top: -4.236rem;
     border-top: $border-style;
@@ -438,8 +436,8 @@ body {
       @extend .font-size-smallest;
       @extend .sans-serif-font;
       color: $secondary-text-color;
-      line-height: 20px * .9;
-      line-height: 1rem * .9;
+      line-height: 20px;
+      line-height: 1rem;
       
       a {
         text-decoration: underline;
@@ -454,25 +452,26 @@ body {
 // ------------------------------
 
 #blog-archives {
-  margin-bottom: 100.316px * .9;
-  margin-bottom: 5.016rem * .9;
+  margin-bottom: 100.316px;
+  margin-bottom: 5.016rem;
   
   h2 {
     @extend .sans-serif-font-bold;
     color: $secondary-text-color;
-    font-size: 50.22px * .9;
-    font-size: 2.511rem * .9; /* 2.618 - 0.107 */
+    font-size: 50.22px;
+    font-size: 2.511rem; /* 2.618 - 0.107 */
   }
   
   article {
     @extend .margin-bottom-larger;
     
     h1 {
-      @extend .font-size-large;
-      line-height: 44px * .9;
-      line-height: 2.2rem * .9;
-      padding-bottom: 4.722px * .9;
-      padding-bottom: 0.236rem * .9;
+      font-size: 38.319px;
+      font-size: 1.916rem;
+      line-height: 44px;
+      line-height: 2.2rem;
+      padding-bottom: 4.722px;
+      padding-bottom: 0.236rem;
       margin: 0;
     }
   }
@@ -499,16 +498,16 @@ body {
 #search_results {
   article {
     margin-left: 0;
-    margin-top: 20px * .9;
-    margin-top: 1rem * .9;
+    margin-top: 20px;
+    margin-top: 1rem;
     
     > a {
       display: none;
     }
     
     p {
-      margin-top: 14.637px * .9;
-      margin-top: 0.732rem * .9;
+      margin-top: 14.637px;
+      margin-top: 0.732rem;
     }
     
     time:after {
@@ -531,12 +530,12 @@ article {
     @extend .margin-bottom-large;
     
     h1 {
-
-      @extend .font-size-large;
-      margin-bottom: 3.456px * .9;
-      margin-bottom: 0.173rem * .9;
-      line-height: 52.96px * .9;
-      line-height: 2.648rem * .9; /* 1.916 + 0.732 */
+      font-size: 45.959px;
+      font-size: 2.298rem; /* 1.916 + 0.382 */
+      margin-bottom: 3.456px;
+      margin-bottom: 0.173rem;
+      line-height: 52.96px;
+      line-height: 2.648rem; /* 1.916 + 0.732 */
       
       a, a:hover {
         color: $text-color;
@@ -547,7 +546,7 @@ article {
       @extend .font-size-medium;
       @extend .sans-serif-font;
       color: $secondary-text-color;
-      line-height: 1.184rem * .9;
+      line-height: 1.184rem;
       text-align: center;
       
       time {
@@ -566,20 +565,20 @@ article {
   
   h1 {
     @extend .font-size-largest;
-    margin-top: 62.000px * .9;
-    margin-top: 3.1rem * .9;
-    margin-bottom: 20px * .9;
-    margin-bottom: 1rem * .9;
+    margin-top: 62.000px;
+    margin-top: 3.1rem;
+    margin-bottom: 20px;
+    margin-bottom: 1rem;
   }
   
   h2 {
-    font-size: 30.56px * .9;
-    font-size: 1.528rem * .9; /* 1.618 - 0.09 */
+    font-size: 30.56px;
+    font-size: 1.528rem; /* 1.618 - 0.09 */
     text-transform: uppercase;
-    margin-top: 52.358px * .9;
-    margin-top: 2.618rem * .9;
-    margin-bottom: 9.046px * .9;
-    margin-bottom: 0.452rem * .9;
+    margin-top: 52.358px;
+    margin-top: 2.618rem;
+    margin-bottom: 9.046px;
+    margin-bottom: 0.452rem;
   }
   
   ul, ol {
@@ -587,8 +586,8 @@ article {
     @extend .default-line-height;
     @extend .margin-bottom-large;
     text-align: left;
-    margin-left: 20px * .9;
-    margin-left: 1rem * .9;
+    margin-left: 20px;
+    margin-left: 1rem;
     
     li:last-child p, ol:last-child p { 
       margin-bottom: 0; 
@@ -620,16 +619,16 @@ article {
   p > code, li code {
     @extend .code-keywords;
     @extend .code-font;
-    font-size: 17.56px * .9;
-    font-size: 0.878rem * .9; /* 0.732 + 0.146 */
+    font-size: 17.56px;
+    font-size: 0.878rem; /* 0.732 + 0.146 */
   }
   
   // ----- post's footer -----
   
   footer {
     @extend .sans-serif-font;
-    padding-top: 12.361px * .9;
-    padding-top: 0.618rem * .9;
+    padding-top: 12.361px;
+    padding-top: 0.618rem;
     
     > span > a {
       text-decoration: underline;
@@ -637,14 +636,14 @@ article {
     
     > p.meta {
       overflow: auto;
-      padding-bottom: 38.319px * .9;
-      padding-bottom: 1.916rem * .9;
+      padding-bottom: 38.319px;
+      padding-bottom: 1.916rem;
       
       &:first-child {
         @extend .font-size-smallest;
         @extend .margin-bottom-large;
-        padding-bottom: 14.637px * .9;
-        padding-bottom: 0.732rem * .9;
+        padding-bottom: 14.637px;
+        padding-bottom: 0.732rem;
         border-bottom: $border-style;
         
         time:after, span.author:after {
@@ -659,8 +658,8 @@ article {
       text-decoration: none;
       width: 45%;
       display: block;
-      line-height: 23.683px * .9;
-      line-height: 1.184rem * .9;
+      line-height: 23.683px;
+      line-height: 1.184rem;
       
       &.left {
         float: left;
@@ -723,8 +722,8 @@ article {
   
   nav {
     border-top: none;
-    margin-bottom: 44.401px * .9;
-    margin-bottom: 2.618rem * .9;
+    margin-bottom: 44.401px;
+    margin-bottom: 2.618rem;
     
     ul {
       border-top: 2px solid #808080;
@@ -739,12 +738,12 @@ article {
     }
     
     form {
-      margin-bottom: 20.08px * .9;
-      margin-bottom: 1.184rem * .9;
+      margin-bottom: 20.08px;
+      margin-bottom: 1.184rem;
       
       input.search {
-        font-size: 15.349px * .9;
-        font-size: 0.905em * .9; /* 0.732 + 0.173 */
+        font-size: 15.349px;
+        font-size: 0.905em; /* 0.732 + 0.173 */
       }
     }
   }
@@ -763,19 +762,19 @@ article {
     margin: 1.916rem 0;
     
     h1 {
-      font-size: 38.319px * .9;
-      font-size: 1.916rem * .9;
+      font-size: 37.244px;
+      font-size: 2.196rem; /* 1.916 + 0.236 */
     }
     
     h2 {
-      font-size: 15.349px * .9;
-      font-size: 0.905rem * .9; /* 0.732 + 0.173 */
+      font-size: 15.349px;
+      font-size: 0.905rem; /* 0.732 + 0.173 */
     }
   }
   
   nav {
-    margin-bottom: 32.495px * .9;
-    margin-bottom: 1.916rem * .9;
+    margin-bottom: 32.495px;
+    margin-bottom: 1.916rem;
     
     ul {
       padding: 12.415px 0;
@@ -786,14 +785,14 @@ article {
       }
       
       li + li {
-        padding-left: 7.66px * .9;
-        padding-left: 0.452rem * .9;
+        padding-left: 7.66px;
+        padding-left: 0.452rem;
       }
     }
     
     form {
-      margin-bottom: 16.96px * .9;
-      margin-bottom: 1rem * .9;
+      margin-bottom: 16.96px;
+      margin-bottom: 1rem;
     }
   }
   
@@ -804,23 +803,23 @@ article {
   
   #blog-archives {
     h2 {
-      font-size: 40.161px * .9;
-      font-size: 2.368rem * .9;
+      font-size: 40.161px;
+      font-size: 2.368rem;
     }
     
     article {
     margin-left: 0;
     
       h1 {
-        font-size: 38.319px * .9;
-        font-size: 1.916rem * .9;
+        font-size: 27.441px;
+        font-size: 1.618rem;
       }
     }
   }
   
   .blog-index > article {
-    margin-bottom: 85.071px * .9 !important;
-    margin-bottom: 5.016rem * .9 !important; /* 4.236 + 0.452 */
+    margin-bottom: 85.071px !important;
+    margin-bottom: 5.016rem !important; /* 4.236 + 0.452 */
   }
   
   img#portrait {
@@ -834,40 +833,30 @@ article {
   article {
     header {
       h1 {
-        font-size: 38.319px * .9;
-        font-size: 1.916rem * .9;
-        line-height: 37.244px * .9;
-        line-height: 2.196rem * .9; /* 1.916 + 0.28 */
+        font-size: 32.495px;
+        font-size: 1.916rem;
+        line-height: 37.244px;
+        line-height: 2.196rem; /* 1.916 + 0.28 */
       }
     }
     
     footer > p.meta {
-      font-size: 16.417px * .9;
-      font-size: 0.968rem * .9; /* 0.732 + 0.236 */
+      font-size: 16.417px;
+      font-size: 0.968rem; /* 0.732 + 0.236 */
     }
     
     .entry-content {
       h1 {
-        font-size: 26.559px * .9;
-        font-size: 1.566rem * .9; /* 1.184 + 0.382 */
-        line-height: 32.495px * .9;
-        line-height: 1.916rem * .9;
+        font-size: 26.559px;
+        font-size: 1.566rem; /* 1.184 + 0.382 */
+        line-height: 32.495px;
+        line-height: 1.916rem;
       }
       
       h2 {
-        font-size: 23.015px * .9;
-        font-size: 1.357rem * .9; /* 1.184 + 0.173 */
+        font-size: 23.015px;
+        font-size: 1.357rem; /* 1.184 + 0.173 */
       }
     }
-  }
-}
-table.dateformat{
-  td{
-    padding: .8rem;
-  }
-  th{
-
-    font-weight: bold;
-
   }
 }
