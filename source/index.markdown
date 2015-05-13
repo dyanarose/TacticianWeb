@@ -9,7 +9,7 @@ footer: true
 ### Tactician App now available on the [Overwolf App Store](http://www.overwolf.com/)
 
 
-(in the in app store, not the online one yet :cry:)
+(found in the Overwolf in app store, not the online app store yet :cry:)
 
 Tactician allows you to store fight tactics and easily access them while you stay in game.
   
