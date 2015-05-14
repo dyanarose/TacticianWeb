@@ -4,7 +4,7 @@
   <title><![CDATA[Tactician]]></title>
   <link href="http://tactician.dyanarose.co.uk/atom.xml" rel="self"/>
   <link href="http://tactician.dyanarose.co.uk/"/>
-  <updated>2015-05-13T22:36:12+01:00</updated>
+  <updated>2015-05-14T19:59:52+01:00</updated>
   <id>http://tactician.dyanarose.co.uk/</id>
   <author>
     <name><![CDATA[Dyana Rose]]></name>
@@ -12,5 +12,26 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Tactician App]]></title>
+    <link href="http://tactician.dyanarose.co.uk/blog/2015/05/12/tactician-app/"/>
+    <updated>2015-05-12T16:00:00+01:00</updated>
+    <id>http://tactician.dyanarose.co.uk/blog/2015/05/12/tactician-app</id>
+    <content type="html"><![CDATA[<p>Unfortunately, it&rsquo;s not always possible to be on voice comms with everyone you are commanding.</p>
+
+<p>Having one part of the squad listening in and another part just following the crowd quickly leads to chaos. The alternative, leading in both chat and voice is very distracting for the commander. Trying to play, speak, and type all at the same time is overwhelmingly difficult.</p>
+
+<p>Tactician exists to tackle the problem of type, speak, and play.</p>
+
+<p>Now you can pre-write all the required in-chat explanations and commands and have them available in-game at the click of the mouse.</p>
+
+<p>Tactician doesn&rsquo;t force you to use it&rsquo;s own set of tactics. You are in control; you build your own set for your own requirements. Tactics can also be shared. Have a friend who leads pugs through Fractals while you know Crimson Wurm? Just share your tactic sets!</p>
+
+<p>Tactician has a simple UI meant for in-combat use, the window allows you to resize and set the transparency to the level you like.</p>
+
+<p>You click, you paste, you fight, you win!</p>
+]]></content>
+  </entry>
   
 </feed>
