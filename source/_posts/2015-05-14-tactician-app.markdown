@@ -5,7 +5,7 @@ date: 2015-05-12 16:00:00 +0100
 comments: true
 categories: 
 ---
-Unfortunately, it's not always possible to be on voice comms with everyone you are commanding.
+It's not always possible to be on voice comms with everyone you are commanding unfortunately.
 
 Having one part of the squad listening in and another part just following the crowd quickly leads to chaos. The alternative, leading in both chat and voice is very distracting for the commander. Trying to play, speak, and type all at the same time is overwhelmingly difficult.
 
