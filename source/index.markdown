@@ -6,7 +6,7 @@ comments: true
 sharing: true
 footer: true
 ---
-### Tactician App now available on the [Overwolf App Store](http://www.overwolf.com/)
+## Tactician App now available on the [Overwolf App Store](http://www.overwolf.com/)
 
 
 (found in the Overwolf in-app store, not the online app store yet :cry:)
@@ -20,7 +20,6 @@ The simple click to copy interface makes commanding as fast as click and paste.
 You can even export your tactics to share with other commanders!
   
 Tactician is available is the following languages: Dansken, Deutsche, English, Español, Suomen, Française, Nederlandse, Norske, Polski, Svenska
-
 
 
 ![](/images/Screenshot1.jpg)
