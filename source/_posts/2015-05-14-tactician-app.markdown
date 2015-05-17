@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tactician App"
-date: 2015-05-12 16:00:00 +0100
+date: 2015-05-14 16:00:00 +0100
 comments: true
 categories: 
 ---
