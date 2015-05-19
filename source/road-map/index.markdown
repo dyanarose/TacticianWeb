@@ -13,3 +13,4 @@ Planned features:
 * Preview before import
 * Export to and Import from a selected file
 * Click & paste closest waypoint
+* Location aware encounter list
