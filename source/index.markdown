@@ -7,7 +7,7 @@ sharing: true
 footer: true
 ---
 ## Voting opening for the Guild Wars 2 App challenge at [Wickr.com](https://wickr.com/guildwars)
-[![Wickr](/images/wickr-banner.png)](https://wickr.com/guildwars)
+[![Wickr](/images/wickr-banner.jpg)](https://wickr.com/guildwars)
 
 Tactician was submitted to the Overwolf Guild Wars 2 App Challenge, sponsored by [Wickr](https://www.wickr.com/). The [vote](https://wickr.com/guildwars) opens on 21 May and continues until 22 May. Voting requires the download of Wickr.
 
