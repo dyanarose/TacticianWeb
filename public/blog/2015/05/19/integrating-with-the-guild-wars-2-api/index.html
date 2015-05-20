@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Tactician App - Tactician</title>
+  <title>Integrating With the Guild Wars 2 API - Tactician</title>
   <meta name="author" content="Dyana Rose">
 
   
-  <meta name="description" content="It&rsquo;s not always possible to be on voice comms with everyone you are commanding unfortunately. Having one part of the squad listening in and &hellip;">
+  <meta name="description" content="Some MMOs have very permissive access to the running game, granting access to character information, allowing macros, enabling &ldquo;offline&rdquo; &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://tactician.dyanarose.co.uk/blog/2015/05/14/tactician-app/">
+  <link rel="canonical" href="http://tactician.dyanarose.co.uk/blog/2015/05/19/integrating-with-the-guild-wars-2-api/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Tactician" type="application/atom+xml">
@@ -70,7 +70,7 @@
   
   <header>
     
-      <h1 class="entry-title">Tactician App</h1>
+      <h1 class="entry-title">Integrating With the Guild Wars 2 API</h1>
     
     
       <p class="meta">
@@ -79,29 +79,37 @@
 
 
 
-<time class='entry-date' datetime='2015-05-14T16:00:00+01:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>4:00 pm</span></time>
+<time class='entry-date' datetime='2015-05-19T01:36:35+01:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:36 am</span></time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>It&rsquo;s not always possible to be on voice comms with everyone you are commanding unfortunately.</p>
-
-<p>Having one part of the squad listening in and another part just following the crowd quickly leads to chaos. The alternative, leading in both chat and voice is very distracting for the commander. Trying to play, speak, and type all at the same time is overwhelmingly difficult.</p>
-
-<p>Tactician exists to tackle the problem of type, speak, and play.</p>
+<div class="entry-content"><p>Some MMOs have very permissive access to the running game, granting access to character information, allowing macros, enabling &ldquo;offline&rdquo; access to in game chat. Guild Wars 2 is not one of those MMOs.</p>
 
 <!--more-->
 
 
-<p>Now you can pre-write all the required in-chat explanations and commands and have them available in-game at the click of the mouse.</p>
+<p>ArenaNet has made available two <a href="http://wiki.guildwars2.com/wiki/API:Main">APIs (versions 1 and 2)</a> for accessing game information and Mumble Link which enables a limited access to character information and location.</p>
 
-<p>Tactician doesn&rsquo;t force you to use it&rsquo;s own set of tactics. You are in control; you build your own set for your own requirements. Tactics can also be shared. Have a friend who leads pugs through Fractals while you know Crimson Wurm? Just share your tactic sets!</p>
+<p>The API is (currently) concerned primarily with facts about game assets (or entirely about game assests if you also think of PvP match information as an asset). You are able to <a href="http://wiki.guildwars2.com/wiki/API:2/recipes">query recipes</a>, but not which recipies the logged in character knows. You are able to <a href="http://wiki.guildwars2.com/wiki/API:2/colors">query dyes</a>, but not which dyes the current account has unlocked. You are able to <a href="http://wiki.guildwars2.com/wiki/API:2/maps">query map information</a>, but not which vistas the current character hasn&rsquo;t discovered yet. You get the drift.</p>
 
-<p>Tactician has a simple UI meant for in-combat use, the window allows you to resize and set the transparency to the level you like.</p>
+<p>There are two current endpoints that allow you access to a small set of account information; you can <a href="http://wiki.guildwars2.com/wiki/API:2/commerce/transactions">retrieve trading post transactions</a> and <a href="http://wiki.guildwars2.com/wiki/API:2/account">account name and home world</a>.</p>
 
-<p>You click, you paste, you fight, you win!</p>
+<p>(API v2 does specifically allow you to <a href="http://wiki.guildwars2.com/wiki/API:2/quaggans">query quaggan images</a>, for which I am forever grateful. Damn I love those little guys)</p>
+
+<p>The question I&rsquo;m left with is, how to best use the asset information to inform the design of Tactician.</p>
+
+<p>The first thing I see is the map information. Using the <a href="http://wiki.guildwars2.com/wiki/API:2/maps">map endpoint</a> in API v2, I can get access to waypoint and POI ids and coordinates.</p>
+
+<p>If, when setting up an encounter, you would, say, select the closest POI, I could then show the closest waypoints. You could then easily associate a waypoint with an encounter or a fight.</p>
+
+<p>With the map information stored against the encounter, Mumble Link could be used to filtered encounters down to those in your current map.</p>
+
+<p>I need to do a full exploration of the APIs, but I don&rsquo;t see a way to access dungeon and world boss information. Both of which would be very useful.</p>
+
+<p>I think I&rsquo;ll give it a good bit of thought and look into proposing these endpoints as, perhaps, extensions of the map endpoint.</p>
 </div>
 
 
@@ -117,7 +125,7 @@
 
 
 
-<time class='entry-date' datetime='2015-05-14T16:00:00+01:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>14</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>4:00 pm</span></time>
+<time class='entry-date' datetime='2015-05-19T01:36:35+01:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:36 am</span></time>
       
 
 
@@ -125,7 +133,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://tactician.dyanarose.co.uk/blog/2015/05/14/tactician-app/" data-via="dyanarose" data-counturl="http://tactician.dyanarose.co.uk/blog/2015/05/14/tactician-app/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://tactician.dyanarose.co.uk/blog/2015/05/19/integrating-with-the-guild-wars-2-api/" data-via="dyanarose" data-counturl="http://tactician.dyanarose.co.uk/blog/2015/05/19/integrating-with-the-guild-wars-2-api/" >Tweet</a>
   
   
   
@@ -134,8 +142,8 @@
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2015/05/14/tactician-app/" title="Previous Post: Tactician App">&laquo; Tactician App</a>
       
-        <a class="basic-alignment right" href="/blog/2015/05/19/integrating-with-the-guild-wars-2-api/" title="Next Post: Integrating with the Guild Wars 2 API">Integrating with the Guild Wars 2 API &raquo;</a>
       
     </p>
   </footer>
@@ -189,8 +197,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://tactician.dyanarose.co.uk/blog/2015/05/14/tactician-app/';
-        var disqus_url = 'http://tactician.dyanarose.co.uk/blog/2015/05/14/tactician-app/';
+        var disqus_identifier = 'http://tactician.dyanarose.co.uk/blog/2015/05/19/integrating-with-the-guild-wars-2-api/';
+        var disqus_url = 'http://tactician.dyanarose.co.uk/blog/2015/05/19/integrating-with-the-guild-wars-2-api/';
         var disqus_script = 'embed.js';
       
     (function () {

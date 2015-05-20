@@ -4,7 +4,7 @@
   <title><![CDATA[Tactician]]></title>
   <link href="http://tactician.dyanarose.co.uk/atom.xml" rel="self"/>
   <link href="http://tactician.dyanarose.co.uk/"/>
-  <updated>2015-05-19T01:31:28+01:00</updated>
+  <updated>2015-05-20T02:44:21+01:00</updated>
   <id>http://tactician.dyanarose.co.uk/</id>
   <author>
     <name><![CDATA[Dyana Rose]]></name>
@@ -12,6 +12,38 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Integrating With the Guild Wars 2 API]]></title>
+    <link href="http://tactician.dyanarose.co.uk/blog/2015/05/19/integrating-with-the-guild-wars-2-api/"/>
+    <updated>2015-05-19T01:36:35+01:00</updated>
+    <id>http://tactician.dyanarose.co.uk/blog/2015/05/19/integrating-with-the-guild-wars-2-api</id>
+    <content type="html"><![CDATA[<p>Some MMOs have very permissive access to the running game, granting access to character information, allowing macros, enabling &ldquo;offline&rdquo; access to in game chat. Guild Wars 2 is not one of those MMOs.</p>
+
+<!--more-->
+
+
+<p>ArenaNet has made available two <a href="http://wiki.guildwars2.com/wiki/API:Main">APIs (versions 1 and 2)</a> for accessing game information and Mumble Link which enables a limited access to character information and location.</p>
+
+<p>The API is (currently) concerned primarily with facts about game assets (or entirely about game assests if you also think of PvP match information as an asset). You are able to <a href="http://wiki.guildwars2.com/wiki/API:2/recipes">query recipes</a>, but not which recipies the logged in character knows. You are able to <a href="http://wiki.guildwars2.com/wiki/API:2/colors">query dyes</a>, but not which dyes the current account has unlocked. You are able to <a href="http://wiki.guildwars2.com/wiki/API:2/maps">query map information</a>, but not which vistas the current character hasn&rsquo;t discovered yet. You get the drift.</p>
+
+<p>There are two current endpoints that allow you access to a small set of account information; you can <a href="http://wiki.guildwars2.com/wiki/API:2/commerce/transactions">retrieve trading post transactions</a> and <a href="http://wiki.guildwars2.com/wiki/API:2/account">account name and home world</a>.</p>
+
+<p>(API v2 does specifically allow you to <a href="http://wiki.guildwars2.com/wiki/API:2/quaggans">query quaggan images</a>, for which I am forever grateful. Damn I love those little guys)</p>
+
+<p>The question I&rsquo;m left with is, how to best use the asset information to inform the design of Tactician.</p>
+
+<p>The first thing I see is the map information. Using the <a href="http://wiki.guildwars2.com/wiki/API:2/maps">map endpoint</a> in API v2, I can get access to waypoint and POI ids and coordinates.</p>
+
+<p>If, when setting up an encounter, you would, say, select the closest POI, I could then show the closest waypoints. You could then easily associate a waypoint with an encounter or a fight.</p>
+
+<p>With the map information stored against the encounter, Mumble Link could be used to filtered encounters down to those in your current map.</p>
+
+<p>I need to do a full exploration of the APIs, but I don&rsquo;t see a way to access dungeon and world boss information. Both of which would be very useful.</p>
+
+<p>I think I&rsquo;ll give it a good bit of thought and look into proposing these endpoints as, perhaps, extensions of the map endpoint.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tactician App]]></title>
@@ -23,6 +55,9 @@
 <p>Having one part of the squad listening in and another part just following the crowd quickly leads to chaos. The alternative, leading in both chat and voice is very distracting for the commander. Trying to play, speak, and type all at the same time is overwhelmingly difficult.</p>
 
 <p>Tactician exists to tackle the problem of type, speak, and play.</p>
+
+<!--more-->
+
 
 <p>Now you can pre-write all the required in-chat explanations and commands and have them available in-game at the click of the mouse.</p>
 

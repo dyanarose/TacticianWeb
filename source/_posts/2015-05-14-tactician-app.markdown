@@ -10,7 +10,7 @@ It's not always possible to be on voice comms with everyone you are commanding u
 Having one part of the squad listening in and another part just following the crowd quickly leads to chaos. The alternative, leading in both chat and voice is very distracting for the commander. Trying to play, speak, and type all at the same time is overwhelmingly difficult.
 
 Tactician exists to tackle the problem of type, speak, and play. 
-
+<!--more-->
 Now you can pre-write all the required in-chat explanations and commands and have them available in-game at the click of the mouse.
 
 Tactician doesn't force you to use it's own set of tactics. You are in control; you build your own set for your own requirements. Tactics can also be shared. Have a friend who leads pugs through Fractals while you know Crimson Wurm? Just share your tactic sets!
