@@ -4,7 +4,7 @@
   <title><![CDATA[Tactician]]></title>
   <link href="http://tactician.dyanarose.co.uk/atom.xml" rel="self"/>
   <link href="http://tactician.dyanarose.co.uk/"/>
-  <updated>2015-05-22T23:36:31+01:00</updated>
+  <updated>2015-05-28T21:45:56+01:00</updated>
   <id>http://tactician.dyanarose.co.uk/</id>
   <author>
     <name><![CDATA[Dyana Rose]]></name>
@@ -12,6 +12,22 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Exploring the Overwolf Sample Plugin]]></title>
+    <link href="http://tactician.dyanarose.co.uk/blog/2015/05/28/exploring-the-overwolf-sample-plugin/"/>
+    <updated>2015-05-28T21:37:23+01:00</updated>
+    <id>http://tactician.dyanarose.co.uk/blog/2015/05/28/exploring-the-overwolf-sample-plugin</id>
+    <content type="html"><![CDATA[<p>A <a href="http://forums.overwolf.com/index.php?/topic/5587-plugin-development-tutorial/">request</a> came up recently on the Overwolf forums for a tutorial on creating NPAPI plugins.</p>
+
+<!--more-->
+
+
+<p>Out of that, I&rsquo;ve started a <a href="https://github.com/dyanarose/overwolf-sample-plugin-documentation">write up of the sample NPAPI plugin</a> that Overwolf provides to help pull together information on the implementation and scripting resources.</p>
+
+<p>Hopefully it&rsquo;s helpful and all errors or misunderstandings get pull requests.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Integrating With the Guild Wars 2 API]]></title>
